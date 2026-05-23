@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNITUS - Texture Packs</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            margin: 50px 20px 30px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            width: 90%;
+            max-width: 1000px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .pack-card {
+            background: rgba(22, 27, 34, 0.6);
+            border: 2px solid rgba(0, 212, 255, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .pack-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 212, 255, 0.8);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+        }
+        .pack-info h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.4rem;
+            color: #ffffff;
+        }
+        .pack-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #58a6ff;
+        }
+        .download-btn {
+            background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+        }
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>IGNITUS</h1>
+        <p>Official Texture Packs</p>
+    </header>
+
+    <div class="container">
+        <div class="pack-card">
+            <div class="pack-info">
+                <h2>Texture Pack #1</h2>
+                <p>Status: Coming soon...</p>
+            </div>
+            <a href="#" class="download-btn" target="_blank">Download</a>
+        </div>
+
+        <div class="pack-card">
+            <div class="pack-info">
+                <h2>Texture Pack #2</h2>
+                <p>Status: Coming soon...</p>
+            </div>
+            <a href="#" class="download-btn" target="_blank">Download</a>
+        </div>
+
+        <div class="pack-card">
+            <div class="pack-info">
+                <h2>Texture Pack #3</h2>
+                <p>Status: Coming soon...</p>
+            </div>
+            <a href="#" class="download-btn" target="_blank">Download</a>
+        </div>
+    </div>
+
+</body>
+</html>
